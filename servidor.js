@@ -8,7 +8,7 @@ const os = require('os')
 
 
 var HOST = 'https://hidden-fjord-71164.herokuapp.com/'
-// var PORT =  process.env.PORT
+var PORT =  process.env.PORT
 var interface = os.networkInterfaces();
 var ipdinamic;
 
@@ -44,10 +44,10 @@ var ser = net.createServer(function(so){
     })
 
 })
-// if(PORT == null || PORT == ''){
-//     PORT = 3000;
-// }
+ if(PORT == null || PORT == ''){
+     PORT = 3000;
+ }
 
-ser.listen(HOST);
+ser.listen(HOST, PORT);
 
 console.log('Node');
