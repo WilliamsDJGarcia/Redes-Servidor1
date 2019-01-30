@@ -12,16 +12,16 @@ var PORT =  process.env.PORT
 var interface = os.networkInterfaces();
 var ipdinamic;
 
-// for(var k in interface){
-//     for(var k2 in interface[k]){
-//         var address = interface[k][k2]
-//         if(address.family == 'IPv4' && !address.internal){
-//             ipdinamic = address.address.toString();
-//         }
+ for(var k in interface){
+     for(var k2 in interface[k]){
+         var address = interface[k][k2]
+         if(address.family == 'IPv4' && !address.internal){
+             ipdinamic = address.address.toString();
+         }
         
-//         console.log(ipdinamic);
-//     }
-// };
+         console.log(ipdinamic);
+     }
+ };
 
 
 // server.listen(PORT, function(){
