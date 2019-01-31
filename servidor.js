@@ -24,9 +24,9 @@ var ipdinamic;
  };
 
 
-// server.listen(PORT, function(){
-//     console.log('Servidor activo ' + PORT + ' : ' + HOST)
-// })
+server.listen(PORT, function(){
+     console.log('Servidor activo ' + PORT + ' : ' + HOST)
+ })
 
 var ser = net.createServer(function(so){
     //console.log(so)
