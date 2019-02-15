@@ -7,8 +7,8 @@ const socket = require('socket.io')(server)
 const os = require('os')
 
 
-var HOST = 'https://hidden-fjord-71164.herokuapp.com/'
-var PORT =  process.env.PORT
+var HOST = 'redespolitecnica5.ddns.net'
+var PORT =  3000
 var interface = os.networkInterfaces();
 var ipdinamic;
 
@@ -44,10 +44,8 @@ var ser = net.createServer(function(so){
     })
 
 })
- if(PORT == null || PORT == ''){
-     PORT = 3000;
- }
+ 
 
-ser.listen(HOST, PORT);
+ser.listen(PORT,HOST);
 
 console.log('Node');

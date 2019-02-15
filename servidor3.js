@@ -6,8 +6,8 @@ const server = require('http').Server(aplicacion)
 const socket = require('socket.io')(server)
 
 var HOST = 'redespolitecnica5.ddns.net'
-var PORT =  4000
-
+var PORT =  5000
+ 
 server.listen(PORT, function(){
      console.log('Servidor activo ' + PORT + ' : ' + HOST)
  })
@@ -28,6 +28,6 @@ var ser = net.createServer(function(so){
     })
 
 })
-ser.listen(PORT, HOST);
+ser.listen(PORT,HOST);
 
 console.log('Node')
