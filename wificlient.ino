@@ -4,8 +4,9 @@ char ssid[] = "moto";
 char password[] = "12345678";
 
 char host[] = "192.168.43.142";
-int httpPort= 3000;
-int httpPort2 = 4000;
+int httpPort= 6200;
+int httpPort2 = 4500;
+int hhtpPort3 = 5100;
 
 boolean verificar=false;
 int contador = 0;
