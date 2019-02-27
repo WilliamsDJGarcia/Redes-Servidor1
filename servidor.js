@@ -8,7 +8,7 @@ const os = require('os')
 
 
 var HOST = 'redespolitecnica5.ddns.net'
-var PORT =  6000
+var PORT =  6200
 var interface = os.networkInterfaces();
 var ipdinamic;
 
@@ -33,7 +33,8 @@ var ser = net.createServer(function(so){
     console.log('Usuario nuevo '+ so.remoteAddress+ ' : ' + so.remotePort )
 
     so.on('data', function(data){
-        console.log(Buffer.from(data, 'hex').toString('utf8'))
+        console.log(Buffer.from(data, 'hex').toString('utf8'));
+	so.write('Hola BB');
     })
 
     so.on('close', function(){

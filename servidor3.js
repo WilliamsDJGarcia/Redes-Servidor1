@@ -6,7 +6,7 @@ const server = require('http').Server(aplicacion)
 const socket = require('socket.io')(server)
 
 var HOST = 'redespolitecnica5.ddns.net'
-var PORT =  5000
+var PORT =  5100
  
 //server.listen(PORT, function(){
 //     console.log('Servidor activo ' + PORT + ' : ' + HOST)
@@ -21,6 +21,7 @@ var ser = net.createServer(function(so){
 
     so.on('data', function(data){
         console.log(Buffer.from(data, 'hex').toString('utf8'))
+	so.write('Hola BB3')
     })
 
     so.on('close', function(){
