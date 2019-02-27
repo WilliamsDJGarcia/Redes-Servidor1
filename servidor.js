@@ -23,17 +23,14 @@ var ipdinamic;
      }
  };
 
-
-server.listen(PORT, function(){
-     console.log('Servidor activo ' + PORT + ' : ' + HOST)
- })
+//var HOST = ipdinamic;
+//server.listen(PORT, function(){
+//     console.log('Servidor activo ' + PORT + ' : ' + HOST)
+// })
 
 var ser = net.createServer(function(so){
     //console.log(so)
     console.log('Usuario nuevo '+ so.remoteAddress+ ' : ' + so.remotePort )
-    so.on('connect', function(){
-        console.log('Nuevo usuario')
-    })
 
     so.on('data', function(data){
         console.log(Buffer.from(data, 'hex').toString('utf8'))
@@ -46,6 +43,6 @@ var ser = net.createServer(function(so){
 })
  
 
-ser.listen(PORT,HOST);
+ser.listen(PORT, HOST);
 
 console.log('Node');
