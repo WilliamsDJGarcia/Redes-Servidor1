@@ -8,7 +8,7 @@ const os = require('os')
 
 
 var HOST = 'redespolitecnica5.ddns.net'
-var PORT =  3000
+var PORT =  6000
 var interface = os.networkInterfaces();
 var ipdinamic;
 
@@ -45,4 +45,4 @@ var ser = net.createServer(function(so){
 
 ser.listen(PORT, HOST);
 
-console.log('Node');
+console.log('Conectado a : ' + HOST + ' : ' + PORT);

@@ -8,9 +8,9 @@ const socket = require('socket.io')(server)
 var HOST = 'redespolitecnica5.ddns.net'
 var PORT =  5000
  
-server.listen(PORT, function(){
-     console.log('Servidor activo ' + PORT + ' : ' + HOST)
- })
+//server.listen(PORT, function(){
+//     console.log('Servidor activo ' + PORT + ' : ' + HOST)
+// })
 
 var ser = net.createServer(function(so){
     //console.log(so)
@@ -30,4 +30,4 @@ var ser = net.createServer(function(so){
 })
 ser.listen(PORT,HOST);
 
-console.log('Node')
+console.log('Conectado a : ' + HOST + ' : ' + PORT )
