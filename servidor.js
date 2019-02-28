@@ -8,7 +8,7 @@ const os = require('os')
 
 
 var HOST = 'redespolitecnica5.ddns.net'
-var PORT =  6200
+var PORT =  4000
 var interface = os.networkInterfaces();
 var ipdinamic;
 

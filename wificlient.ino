@@ -1,12 +1,12 @@
 #include <ESP8266WiFi.h>
 
 char ssid[] = "moto";
-char password[] = "12345678";
+char password[] = "comatose2019";
 
 char host[] = "192.168.43.142";
-int httpPort= 6200;
-int httpPort2 = 4500;
-int hhtpPort3 = 5100;
+int httpPort= 4000;
+int httpPort2 = 5000;
+int hhtpPort3 = 6000;
 
 boolean verificar=false;
 int contador = 0;
